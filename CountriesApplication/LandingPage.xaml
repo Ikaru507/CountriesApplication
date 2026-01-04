@@ -1,0 +1,47 @@
+﻿<Page x:Class="CountriesApplication.LandingPage"
+      xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+      xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml">
+
+    <Grid>
+        <Grid.Background>
+            <LinearGradientBrush StartPoint="0,0" EndPoint="1,1">
+                <GradientStop Color="#667eea" Offset="0"/>
+                <GradientStop Color="#764ba2" Offset="1"/>
+            </LinearGradientBrush>
+        </Grid.Background>
+
+        <Border Width="350"
+                Padding="30"
+                CornerRadius="20"
+                Background="#1E1E2E"
+                HorizontalAlignment="Center"
+                VerticalAlignment="Center">
+
+            <StackPanel>
+                <TextBlock Text="Welcome 👋"
+                           Foreground="White"
+                           FontSize="28"
+                           FontWeight="Bold"
+                           HorizontalAlignment="Center"
+                           Margin="0,0,0,30"/>
+
+                <Button Content="LogIn"
+                        Height="45"
+                        FontSize="16"
+                        Margin="0,0,0,15"
+                        Background="#667eea"
+                        Foreground="White"
+                        BorderThickness="0"
+                        Click="LogIn_Click"/>
+
+                <Button Content="Sign Up"
+                        Height="45"
+                        FontSize="16"
+                        Background="#764ba2"
+                        Foreground="White"
+                        BorderThickness="0"
+                        Click="SignUp_Click"/>
+            </StackPanel>
+        </Border>
+    </Grid>
+</Page>
