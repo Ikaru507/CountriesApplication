@@ -7,6 +7,6 @@
         WindowStartupLocation="CenterScreen"
         ResizeMode="NoResize">
 
-    <Frame x:Name="MainFrame"
-           NavigationUIVisibility="Hidden"/>
+    <Frame x:Name="MainFrame" Source="Pages/LandingPage.xaml"
+           NavigationUIVisibility="Hidden" Height="425" Width="800"/>
 </Window>

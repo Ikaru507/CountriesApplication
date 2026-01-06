@@ -1,16 +1,11 @@
-﻿<Page x:Class="CountriesApp.SignUpPage"
+﻿<Page x:Class="CountriesAppliction.SignUpPage"
       xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
       xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml">
 
     <Grid Background="#1E1E2E">
-        <Border Width="400"
-                Padding="25"
-                CornerRadius="20"
-                Background="#2D2D44"
-                HorizontalAlignment="Center"
-                VerticalAlignment="Center">
 
-            <ScrollViewer>
+        <Image Stretch="Fill" Source="C:\Users\User\source\repos\CountriesApplication\CountriesApplication\Pictures\Gemini_Generated_Image_gk9q1ugk9q1ugk9q.png"/>
+        <ScrollViewer>
                 <StackPanel>
                     <TextBlock Text="Create Account 🚀"
                                Foreground="White"
@@ -51,6 +46,6 @@
                             Click="Back_Click"/>
                 </StackPanel>
             </ScrollViewer>
-        </Border>
+        
     </Grid>
 </Page>
