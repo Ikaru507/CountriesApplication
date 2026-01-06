@@ -8,34 +8,36 @@
         <ScrollViewer>
                 <StackPanel>
                     <TextBlock Text="Create Account 🚀"
-                               Foreground="White"
+                               Foreground="DarkGreen"
                                FontSize="24"
                                FontWeight="Bold"
+                                FontFamily="/Fonts/#DynaPuff"
                                Margin="0,0,0,20"/>
 
-                    <TextBlock Text="Full Name" Foreground="White"/>
-                    <TextBox x:Name="FullNameBox" Height="35" Margin="0,5"/>
+                <TextBlock Text="Full Name" Foreground="DarkGreen"  FontFamily="/Fonts/#DynaPuff"/>
+                <TextBox x:Name="FullNameBox" Height="35" Margin="0,5"  FontFamily="/Fonts/#DynaPuff"/>
 
-                    <TextBlock Text="Phone Number" Foreground="White"/>
-                    <TextBox x:Name="PhoneBox" Height="35" Margin="0,5"/>
+                <TextBlock Text="Phone Number" Foreground="DarkGreen"  FontFamily="/Fonts/#DynaPuff"/>
+                <TextBox x:Name="PhoneBox" Height="35" Margin="0,5"  FontFamily="/Fonts/#DynaPuff"/>
 
-                    <TextBlock Text="Date of Birth" Foreground="White"/>
-                    <DatePicker x:Name="DobPicker" Height="35" Margin="0,5"/>
+                <TextBlock Text="Date of Birth" Foreground="DarkGreen"  FontFamily="/Fonts/#DynaPuff"/>
+                <DatePicker x:Name="DobPicker" Height="35" Margin="0,5"  FontFamily="/Fonts/#DynaPuff"/>
 
-                    <TextBlock Text="Email" Foreground="White"/>
-                    <TextBox x:Name="EmailBox" Height="35" Margin="0,5"/>
+                <TextBlock Text="Email" Foreground="DarkGreen"  FontFamily="/Fonts/#DynaPuff"/>
+                <TextBox x:Name="EmailBox" Height="35" Margin="0,5"  FontFamily="/Fonts/#DynaPuff"/>
 
-                    <TextBlock Text="Confirm Email" Foreground="White"/>
-                    <TextBox x:Name="ConfirmEmailBox" Height="35" Margin="0,5"/>
+                <TextBlock Text="Confirm Email" Foreground="DarkGreen"  FontFamily="/Fonts/#DynaPuff"/>
+                <TextBox x:Name="ConfirmEmailBox" Height="35" Margin="0,5"  FontFamily="/Fonts/#DynaPuff"/>
 
-                    <TextBlock Text="Password" Foreground="White"/>
-                    <PasswordBox x:Name="PasswordBox" Height="35" Margin="0,10"/>
+                <TextBlock Text="Password" Foreground="DarkGreen"  FontFamily="/Fonts/#DynaPuff"/>
+                <PasswordBox x:Name="PasswordBox" Height="35" Margin="0,10"  FontFamily="/Fonts/#DynaPuff"/>
 
                     <Button Content="Sign Up"
                             Height="40"
                             Background="#764ba2"
-                            Foreground="White"
+                            Foreground="DarkGreen"
                             BorderThickness="0"
+                             FontFamily="/Fonts/#DynaPuff"
                             Click="SignUp_Click"/>
 
                     <Button Content="← Back"
@@ -43,6 +45,7 @@
                             Background="Transparent"
                             Foreground="White"
                             BorderThickness="0"
+                             FontFamily="/Fonts/#DynaPuff"
                             Click="Back_Click"/>
                 </StackPanel>
             </ScrollViewer>
