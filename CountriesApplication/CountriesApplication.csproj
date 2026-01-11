@@ -9,11 +9,17 @@
   </PropertyGroup>
 
   <ItemGroup>
+    <None Remove="Fonts\Aladin-Regular.ttf" />
+    <None Remove="Fonts\Caveat-VariableFont_wght.ttf" />
     <None Remove="Fonts\DynaPuff-VariableFont_wdth,wght.ttf" />
+    <None Remove="Fonts\IndieFlower-Regular.ttf" />
   </ItemGroup>
 
   <ItemGroup>
+    <Resource Include="Fonts\Aladin-Regular.ttf" />
+    <Resource Include="Fonts\Caveat-VariableFont_wght.ttf" />
     <Resource Include="Fonts\DynaPuff-VariableFont_wdth,wght.ttf" />
+    <Resource Include="Fonts\IndieFlower-Regular.ttf" />
   </ItemGroup>
 
 </Project>
