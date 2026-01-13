@@ -16,6 +16,15 @@
   </ItemGroup>
 
   <ItemGroup>
+    <Reference Include="Model">
+      <HintPath>..\..\..\..\Downloads\needtofixall-master\needtofixall-master\Interface\bin\Debug\net9.0\Model.dll</HintPath>
+    </Reference>
+    <Reference Include="Service">
+      <HintPath>..\..\..\..\Downloads\needtofixall-master\needtofixall-master\Interface\bin\Debug\net9.0\Service.dll</HintPath>
+    </Reference>
+  </ItemGroup>
+
+  <ItemGroup>
     <Resource Include="Fonts\Aladin-Regular.ttf" />
     <Resource Include="Fonts\Caveat-VariableFont_wght.ttf" />
     <Resource Include="Fonts\DynaPuff-VariableFont_wdth,wght.ttf" />

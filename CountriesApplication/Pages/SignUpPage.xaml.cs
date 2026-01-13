@@ -12,25 +12,58 @@ using System.Windows.Media;
 using System.Windows.Media.Imaging;
 using System.Windows.Navigation;
 using System.Windows.Shapes;
+using Service;
+using Model;
+using System.Dynamic;
+
+
 
 namespace CountriesAppliction
 {
     public partial class SignUpPage : Page
     {
+        ApiService apiService = new ApiService();
+        List<UserDetails> userDetails = new List<UserDetails>();
         public SignUpPage()
         {
             InitializeComponent();
         }
+        public async void GetAllUserDetails()
+        {
+            
+            userDetails = await apiService.GetAllUserDetails();
+        }
 
-        private void SignUp_Click(object sender, RoutedEventArgs e)
+        public async void InsertUserDetails()
         {
             if (EmailBox.Text != ConfirmEmailBox.Text)
             {
                 MessageBox.Show("Emails do not match ❌");
                 return;
             }
+            UserDetails u = new UserDetails()
+            {
+                UserName = UserNameBox.Text,
 
-            MessageBox.Show("Account created successfully ✅");
+                Email = EmailBox.Text,
+                Password = PasswordBox.Password
+
+            };
+            int x = await apiService.InsertUserDetails(u);
+            if (x > 0)
+            {
+                MessageBox.Show("Account created successfully ✅");
+            }
+            else
+            {
+                MessageBox.Show("Error creating account ❌");
+            }
+        }
+        private void SignUp_Click(object sender, RoutedEventArgs e)
+        {
+               InsertUserDetails();
+            
+          
         }
 
         private void Back_Click(object sender, RoutedEventArgs e)

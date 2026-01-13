@@ -28,8 +28,8 @@
     Background="Transparent"
     Foreground="MediumPurple"
     BorderThickness="0"
-                FontWeight="ExtraBold"
-    FontFamily="/Fonts/#Caveat"
+                
+    FontFamily="/Fonts/#DynaPuff"
     Click="LogIn_Click">
 
                 <!-- Scale transform for animation -->
@@ -69,8 +69,8 @@
     Background="Transparent"
     Foreground="MediumPurple"
     BorderThickness="0"
-               FontWeight="ExtraBold"
-    FontFamily="/Fonts/#Caveat"
+               
+    FontFamily="/Fonts/#DynaPUFF"
     Click="SignUp_Click" Width="150" Height="55">
 
                 <!-- Scale transform for animation -->
